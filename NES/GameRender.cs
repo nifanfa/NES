@@ -13,7 +13,7 @@ namespace NES
 {
     public class GameRender
     {
-        NES tinerasNES;
+        NES NES;
         Bitmap textureScreenBuffer;
 
         // Setup background color to use with Alpha
@@ -55,12 +55,12 @@ namespace NES
                 }
             }
 
-            Program.tinerasNES.Present(textureScreenBuffer);
+            Program.NES.Present(textureScreenBuffer);
         }
 
         public GameRender(NES formObject)
         {
-            tinerasNES = formObject;
+            NES = formObject;
             InitializeGame();
         }
 

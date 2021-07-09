@@ -8,7 +8,7 @@ namespace NES
     static class Program
     {
 
-        public static NES tinerasNES;
+        public static NES NES;
 
         /// <summary>
         /// The main entry point for the application.
@@ -19,21 +19,21 @@ namespace NES
             Application.SetCompatibleTextRenderingDefault(false);
             
 
-            using (tinerasNES = new NES())
+            using (NES = new NES())
             {
                 Application.EnableVisualStyles();
 
-                tinerasNES.Show();
+                NES.Show();
 
-                while (tinerasNES.Created)
+                while (NES.Created)
                 {
                     int updateForm = 0;
 
                     Application.DoEvents();
 
-                    while (tinerasNES.bolRunGame)
+                    while (NES.bolRunGame)
                     {
-                        tinerasNES.runGame();
+                        NES.runGame();
 
                         if (updateForm++ >= 1000)
                         {

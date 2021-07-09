@@ -63,6 +63,9 @@ namespace NES
 
         public void openROM(string strFileLoc)
         {
+            //
+            label1.Visible = false;
+
             fsOpenRom = new FileStream(strFileLoc, FileMode.Open);
             byte[] temp = new byte[16];
 
@@ -136,6 +139,9 @@ namespace NES
 
         public void resetGame()
         {
+            //
+            label1.Visible = true;
+
             registers = new Registers();
             input = new Input();
             mappers = new Mappers();

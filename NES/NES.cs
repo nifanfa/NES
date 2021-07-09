@@ -150,7 +150,7 @@ namespace NES
         }
 
         #region Keyboard Input
-        public void TinerasNES_KeyDown(object sender, KeyEventArgs e)
+        public void NES_KeyDown(object sender, KeyEventArgs e)
         {
             char c = (char)(e.KeyCode);
 
@@ -188,7 +188,7 @@ namespace NES
             }
         }
 
-        private void TinerasNES_KeyUp(object sender, KeyEventArgs e)
+        private void NES_KeyUp(object sender, KeyEventArgs e)
         {
             Keys c = e.KeyCode;
 
@@ -229,7 +229,7 @@ namespace NES
 
         private void tmrFPS_Tick(object sender, EventArgs e)
         {
-            this.Text = ("TinerasNES - FPS: ") + Convert.ToString(intFPS) + "  NameTable: " + String.Format("{0:x4}", ppu.nameTable) + "  Mapper #: " + Convert.ToString(MapperNumber)
+            this.Text = ("FPS: ") + Convert.ToString(intFPS) + "  NameTable: " + String.Format("{0:x4}", ppu.nameTable) + "  Mapper #: " + Convert.ToString(MapperNumber)
                         + ", Bank: " + Convert.ToString(memory.MapperBank);
             intFPS = 0;
         }

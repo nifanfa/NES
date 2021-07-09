@@ -48,7 +48,7 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
-            // TinerasNES
+            // NES
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -57,12 +57,12 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.KeyPreview = true;
-            this.Name = "TinerasNES";
-            this.Text = "TinerasNES";
+            this.Name = "NES";
+            this.Text = "NES";
             this.DragDrop += new System.Windows.Forms.DragEventHandler(this.DragToOpenFile);
             this.DragEnter += new System.Windows.Forms.DragEventHandler(this.DragEnterEvent);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TinerasNES_KeyDown);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TinerasNES_KeyUp);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NES_KeyDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.NES_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

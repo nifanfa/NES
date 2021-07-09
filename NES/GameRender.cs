@@ -45,6 +45,7 @@ namespace NES
                 {
                     textureScreenBuffer.SetPixel(w, h, color);
                 }
+                //
                 w++;
                 //256*240
                 if(w == 256) 

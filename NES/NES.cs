@@ -160,19 +160,19 @@ namespace NES
         {
             char c = (char)(e.KeyCode);
 
-            if (c == 'J')        // A
+            if (c == 'Q')        // A
             {
                 input.joypadOne |= 0x01;
             }
-            else if (c == 'H')   // B
+            else if (c == 'E')   // B
             {
                 input.joypadOne |= 0x02;
             }
-            else if (c == 'F')   // Select
+            else if (c == 'Z')   // Select
             {
                 input.joypadOne |= 0x04;
             }
-            else if (c == 'G')   // Start
+            else if (c == 'C')   // Start
             {
                 input.joypadOne |= 0x08;
             }
@@ -198,19 +198,19 @@ namespace NES
         {
             Keys c = e.KeyCode;
 
-            if (c == Keys.J)        // A
+            if (c == Keys.Q)        // A
             {
                 input.joypadOne &= 0xFE;
             }
-            else if (c == Keys.H)   // B
+            else if (c == Keys.E)   // B
             {
                 input.joypadOne &= 0xFD;
             }
-            else if (c == Keys.F)   // Select
+            else if (c == Keys.Z)   // Select
             {
                 input.joypadOne &= 0xFB;
             }
-            else if (c == Keys.G)   // Start
+            else if (c == Keys.C)   // Start
             {
                 input.joypadOne &= 0xF7;
             }

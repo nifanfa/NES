@@ -556,7 +556,9 @@ namespace NES
             memory.memCPU[0x2002] &= memCPU2002T;   // Reset '8 sprites on a scanline' bit
 
             // Reset Temp Sprite Values for next evaluation
-            spriteToDrawT = new byte[8];    // Stores the location of each sprite found
+            if(spriteToDrawT == null) spriteToDrawT = new byte[8];
+            for (int i = 0; i < 8; i++) spriteToDrawT[i] = 0;
+            //spriteToDrawT = new byte[8];    // Stores the location of each sprite found
             spriteIndexT = 0x00;            // Number of sprites found
             spritesFoundT = false;          // Any sprites found?
             memCPU2002T = 0xDF;             // Reset '8 sprites on a scanline' bit

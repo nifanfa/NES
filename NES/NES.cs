@@ -11,7 +11,7 @@ namespace NES
 {
     public partial class NES : Form
     {
-        FileStream fsOpenRom;
+        MemoryStream fsOpenRom;
         Registers registers;
         MemoryMap memory;
         Mappers mappers;
@@ -66,7 +66,8 @@ namespace NES
             //
             label1.Visible = false;
 
-            fsOpenRom = new FileStream(strFileLoc, FileMode.Open);
+            byte[] buffer = File.ReadAllBytes(strFileLoc);
+            fsOpenRom = new MemoryStream(buffer);
             byte[] temp = new byte[16];
 
             fsOpenRom.Read(temp, 0, temp.Length);

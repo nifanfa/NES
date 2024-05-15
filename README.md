@@ -1,4 +1,3 @@
 # NES
-Forked from [TinerasNES_CSharp](https://github.com/tineras/TinerasNES_CSharp)  
-I modified a lot.  
+c# nintendo entertainment system emulator  
 ![image](https://github.com/nifanfa/NES/blob/master/QQ截图20210710070454.png)
